@@ -1,4 +1,4 @@
-import { generateData, generateDetails } from './generate-data';
+const { generateData, generateDetails } = require ('./generate-data');
 
 const data = generateData();
 const cache = {};

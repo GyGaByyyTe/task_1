@@ -15,7 +15,7 @@ function generateChartData(isActive) {
     .map((el, i) => (i < count ? Math.floor(Math.random() * 7) + 2 : 0));
 }
 
-export function generateData() {
+exports.generateData = function() {
   const data = [];
 
   for (let i = 0; i < 721; i++) {
@@ -30,7 +30,7 @@ export function generateData() {
   return data;
 };
 
-export function generateDetails ({ isActive }) {
+exports.generateDetails = function({ isActive }) {
   const connections = isActive ? Math.floor(Math.random() * 7) + 4 : 0;
 
   return {
